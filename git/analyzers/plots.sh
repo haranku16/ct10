@@ -1,5 +1,5 @@
-I=3
+I=1
 while [ $I -lt 27 ]; do
-	root -l "plots.C($I)" &
+	root -b "plots.C($I)" &
 	let I=I+1
 done

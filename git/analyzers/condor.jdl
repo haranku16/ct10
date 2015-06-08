@@ -1,0 +1,10 @@
+universe = vanilla
+Should_Transfer_Files = YES
+WhenToTransferOutput = ON_EXIT
+Notification = Never
+Executable = condor.sh
+Transfer_Input_Files = plots.C, ../diphox_completed.root
+Output = condor/job_$(Process).stdout
+Error = condor/job_$(Process).stderr
+Log = condor/job_$(Process).condor
+Queue 1
