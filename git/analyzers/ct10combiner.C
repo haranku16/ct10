@@ -2,7 +2,7 @@
 #include <TFile.h>
 #include <TH2.h>
 void ct10combiner(){
-	TFile f = TFile("diphox_completed_testcombiner.root","recreate");
+	TFile f = TFile("diphox_1GeV.root","recreate");
 	TH1D* ee;
 	TH1D* bb;
 	TH1D* be;

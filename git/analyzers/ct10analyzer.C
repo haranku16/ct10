@@ -28,7 +28,7 @@ void process(int num){
 	float wpy[3];
 	float wpz[3];
 	float we[3];
-	int NBINS=172;
+	int NBINS=2000;
 	TBranch* b_wpx;
 	TBranch* b_wpy;
 	TBranch* b_wpz;
