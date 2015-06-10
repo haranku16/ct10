@@ -12,11 +12,11 @@
 #include <stdlib.h>
 using namespace std;	
 int inB(double eta){
-	if (abs(eta)<1.4442) return 1;
+	if (fabs(eta)<1.4442) return 1;
 	return 0;
 }
 int inE(double eta){
-	if (abs(eta)<2.5 && abs(eta)>1.566) return 1;
+	if (fabs(eta)<2.5 && fabs(eta)>1.566) return 1;
 	return 0;
 }
 int inSameE(double eta1,double eta2){
@@ -28,7 +28,7 @@ void process(int num){
 	float wpy[3];
 	float wpz[3];
 	float we[3];
-	int NBINS=2000;
+	int NBINS=860;
 	TBranch* b_wpx;
 	TBranch* b_wpy;
 	TBranch* b_wpz;
